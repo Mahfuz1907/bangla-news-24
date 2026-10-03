@@ -6,6 +6,8 @@ import React from 'react';
 
 const AuthButtons = () => {
     const { data: session } = useSession()
+
+    console.log('user session',session)
     return (
         <div className='space-x-4'>
             {

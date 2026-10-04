@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './Card';
+import PaginationComponent from './Pagination';
+import DataMap from './DataMap';
 
 interface Types{
     params: Promise<{slug: string}>
@@ -49,11 +50,13 @@ const CategoryWise = async({params}:Types) => {
                 <h2>{category.title}</h2>
                 <hr className='border-2 border-green-600 mt-5' />
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 justify-between items-start'>
+            {/* <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 justify-between items-start'>
                 {
                     categoryWise.map((card:NewsTypes) => <Card key={card.id} card={card} />)
                 }
-            </div>
+            </div> */}
+            <DataMap categoryWise={categoryWise} />
+            <PaginationComponent categoryWise={categoryWise} />
         </div>
     );
 };

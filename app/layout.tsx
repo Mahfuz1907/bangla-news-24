@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar/Navbar";
 import Footer from "@/Components/Footer/Footer";
 import NewsTicker from "@/Components/NewsTicker/NewsTicker";
+import NewsProvider from "@/Context/NewsContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +35,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-serif">
-        <Navbar />
-        <NewsTicker />
-        {children}
-        <Footer />
+        <NewsProvider>
+          <Navbar />
+          <NewsTicker />
+            {children}
+          <Footer />
+        </NewsProvider>
       </body>
     </html>
   );

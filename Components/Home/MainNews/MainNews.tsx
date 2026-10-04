@@ -35,7 +35,7 @@ const MainNews = async() => {
 
     const sideNews = MainNews.slice(1,7)
     return (
-        <div className='flex flex-row justify-between items-start gap-5'>
+        <div className='flex flex-col lg:flex-row justify-between items-start gap-5 w-full'>
             <MainCard mainNewsCard={mainNewsCard} />
             <MainSideNews sideNews={sideNews} />
         </div>

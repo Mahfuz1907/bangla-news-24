@@ -14,8 +14,8 @@ export const revalidate = 0;
 
 export default function Home() {
   return (
-    <div className="mx-37.5 my-10 grid grid-cols-3 justify-between items-start gap-10">
-      <div className="flex flex-col col-span-2 justify-between items-start gap-10">
+    <div className="mx-5 2xl:mx-37.5 my-10 grid grid-cols-1 lg:grid-cols-3 justify-between items-start gap-10">
+      <div className="flex flex-col lg:col-span-2 justify-between items-start gap-10 w-full">
         <MainNews />
         <SelectedNews />
         <BangladeshNews />

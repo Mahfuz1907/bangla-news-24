@@ -28,15 +28,15 @@ export default async function Navbar() {
   return (
     <header className="w-full bg-white border-b border-gray-200">
       {/* Top Bar: Brand, Date, and Authentication */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div className="mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
         
         {/* Left spacing to center logo alignment */}
-        <div className="hidden md:flex items-center space-x-4 w-1/4"></div>
+        <div className="flex items-center space-x-4 w-1/4"></div>
 
         {/* Center: Logo & Date */}
         <Link href={'/'} className="flex items-center space-x-3 mx-auto md:mx-0">
           {/* Logo Icon */}
-          <div className="relative w-12 h-12 shrink-0">
+          <div className="relative w-8 md:w-12 h-8 md:h-12 shrink-0">
             <Image
               src="/logo.png"
               alt="Bangla News 24 Logo"
@@ -49,7 +49,7 @@ export default async function Navbar() {
 
           {/* Title & Date Column */}
           <div className="flex flex-col">
-            <h1 className="text-2xl font-bold tracking-tight text-emerald-800 font-serif">
+            <h1 className="text-lg md:text-2xl font-bold tracking-tight text-emerald-800 font-serif">
               Bangla News 24
             </h1>
             <span className="text-xs text-gray-500 font-medium mt-0.5">
@@ -59,7 +59,7 @@ export default async function Navbar() {
         </Link>
 
         {/* Right: Authentication Buttons */}
-        <div className="flex items-center w-1/4 justify-end">
+        <div className="flex flex-col sm:flex-row items-center w-1/4 justify-end">
         <AuthButtons />
         </div>
       </div>

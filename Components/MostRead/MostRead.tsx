@@ -39,7 +39,7 @@ const MostRead = async() => {
     const mostRead = await getMostRead()
     
     return (
-        <div className="w-full max-w-md bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+        <div className="w-full bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
       {/* Widget Header */}
       <h2 className="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4 font-serif">
         সর্বাধিক পঠিত

@@ -33,9 +33,9 @@ const WorldNews = async() => {
         <div className='w-full flex flex-col justify-between items-start gap-5'>
             <div className='w-full'>
                 <h1 className='mb-3'>বিশ্ব</h1>
-                <hr className='text-green-600 font-black border-2' />
+                <hr className='border-green-600 font-black border-2' />
             </div>
-            <div className='grid grid-cols-3 justify-between items-start gap-5'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-start gap-5'>
                 {
                     worldNews.map((card:NewsTypes) => <Card key={card.id} card={card} />)
                 }

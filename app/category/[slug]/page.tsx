@@ -44,12 +44,12 @@ const CategoryWise = async({params}:Types) => {
     const category = await getCategoryWise(slug)
     const categoryWise = category.data
     return (
-        <div className='mx-37.5 my-10 flex flex-col justify-between items-start gap-5'>
+        <div className='mx-5 2xl:mx-37.5 my-10 flex flex-col justify-between items-start gap-5'>
             <div className='w-full'>
                 <h2>{category.title}</h2>
                 <hr className='border-2 border-green-600 mt-5' />
             </div>
-            <div className='grid grid-cols-3 gap-5 justify-between items-start'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 justify-between items-start'>
                 {
                     categoryWise.map((card:NewsTypes) => <Card key={card.id} card={card} />)
                 }

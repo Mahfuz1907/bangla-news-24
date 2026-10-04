@@ -33,9 +33,9 @@ const HealthNews = async() => {
         <div className='w-full flex flex-col justify-between items-start gap-5'>
             <div className='w-full'>
                 <h1 className='mb-3'>স্বাস্থ্য</h1>
-                <hr className='text-green-600 font-black border-2' />
+                <hr className='border-green-600 font-black border-2' />
             </div>
-            <div className='grid grid-cols-3 justify-between items-start gap-5'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-start gap-5'>
                 {
                         healthNews.map((card:NewsTypes) => <Card key={card.id} card={card} />)
                 }

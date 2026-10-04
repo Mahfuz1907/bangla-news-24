@@ -69,7 +69,7 @@ const NewsDetails = async({params}:Types) => {
     console.log(newsDetails.body[0].caption)
 
     return (
-        <div className='mx-100 my-10 flex flex-col justify-between items-start gap-5'>
+        <div className='mx-5 md:mx-10 lg:mx-37.5 xl:mx-70 2xl:mx-100 my-10 flex flex-col justify-between items-start gap-5'>
             {/* news title */}
             <h1 className='text-3xl font-bold'>{newsDetails.title}</h1>
             {/* news short description */}

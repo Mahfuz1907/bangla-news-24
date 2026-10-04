@@ -41,14 +41,13 @@ export default function MainCard({ card }: CardTypes) {
     }
 
   return (
-    <Link href={`/article/${card.id}`} className="max-w-md group cursor-pointer h-105 flex-1 bg-white border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md hover:border hover:border-green-600 transition-shadow duration-200">
+    <Link href={`/article/${card.id}`} className="group cursor-pointer h-130 lg:h-105 flex-1 bg-white border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md hover:border hover:border-green-600 transition-shadow duration-200">
       {/* Featured Image */}
-      <div className="relative w-full h-40 bg-gray-100">
+      <div className="relative w-full h-80 lg:h-40 bg-gray-100">
         <Image
           src={card.imageUrl}
           alt={card.imageAlt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           priority
         />

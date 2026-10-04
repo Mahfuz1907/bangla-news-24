@@ -8,7 +8,7 @@ interface SideNewsListProps {
 
 export default function MainSideNews({ sideNews }: SideNewsListProps) {
   return (
-    <div className="w-full flex-1 h-150 max-w-md bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden divide-y divide-gray-200">
+    <div className="w-full flex-1 h-150 bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden divide-y divide-gray-200">
       {sideNews.map((item) => (
         <div key={item.id} className="p-4 hover:bg-gray-50 transition-colors">
           {/* Category Label */}

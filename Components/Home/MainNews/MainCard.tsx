@@ -40,7 +40,7 @@ export default function MainCard({ mainNewsCard }: CardTypes) {
     }
 
   return (
-    <Link href={`/article/${mainNewsCard.id}`} className="max-w-md flex-1 group bg-white hover:border hover:border-green-600 cursor-pointer h-150 border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
+    <Link href={`/article/${mainNewsCard.id}`} className="flex-1 group bg-white hover:border hover:border-green-600 cursor-pointer h-150 border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
       {/* Featured Image */}
       <div className="relative w-full h-64 sm:h-72 bg-gray-100">
         <Image

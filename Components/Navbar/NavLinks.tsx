@@ -28,7 +28,7 @@ const NavLinks = ({navigations}:NavLinkProps) => {
     }
     return (
         <nav className="border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <ul className="flex items-center justify-center space-x-6 sm:space-x-8 py-2.5 overflow-x-auto text-sm font-medium text-gray-700">
           {
             navigations.map((item) => {
@@ -38,7 +38,7 @@ const NavLinks = ({navigations}:NavLinkProps) => {
                 <Link 
                 key={item.title} 
                 href={targetPath}
-                className={`transition-colors py-1 block whitespace-nowrap ${
+                className={`transition-colors text-[10px] sm:text-xs py-1 block whitespace-nowrap ${
                     isActive
                       ? 'text-emerald-800 font-bold border-b-2 border-emerald-800'
                       : 'hover:text-emerald-700 text-gray-700'

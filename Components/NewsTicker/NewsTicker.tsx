@@ -19,7 +19,7 @@ export default async function NewsTicker() {
   const newsHeadlines = await getHeadLines()
 
   return (
-    <div className="w-full px-37.5 sticky top-0 z-50 bg-emerald-800 text-white flex items-center overflow-hidden border-t border-b border-emerald-900 shadow-inner">
+    <div className="w-full px-5 2xl:px-37.5 sticky top-0 z-50 bg-emerald-800 text-white flex items-center overflow-hidden border-t border-b border-emerald-900 shadow-inner">
       {/* Fixed 'Latest' Label */}
       <div className="bg-emerald-950 px-5 py-2 font-bold text-sm z-10 whitespace-nowrap flex items-center shadow-md">
         সর্বশেষ

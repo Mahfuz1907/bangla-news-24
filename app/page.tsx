@@ -8,6 +8,9 @@ import Video from "@/Components/Home/Video/Video";
 import WorldNews from "@/Components/Home/WorldNews/WorldNews";
 import MostRead from "@/Components/MostRead/MostRead";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 
 export default function Home() {
   return (

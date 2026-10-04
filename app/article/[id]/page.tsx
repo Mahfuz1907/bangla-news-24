@@ -14,7 +14,9 @@ interface NewsBodyTypes{
 }
 
 const getNewsDetails = async(id:string) => {
-    const res = await fetch(`https://news-api-v2.vercel.app/api/article/${id}`)
+    const res = await fetch(`https://news-api-v2.vercel.app/api/article/${id}`, {
+        cache: "no-store"
+    })
     const data = await res.json()
     return data.data
 }

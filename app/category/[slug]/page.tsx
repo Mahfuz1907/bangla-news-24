@@ -20,7 +20,9 @@ export interface NewsTypes{
 }
 
 const getCategoryWise = async(slug:string) => {
-    const res = await fetch(`https://news-api-v2.vercel.app/api/category/${slug}`)
+    const res = await fetch(`https://news-api-v2.vercel.app/api/category/${slug}`, {
+        cache: "no-store"
+    })
     const data = await res.json()
     return data
 }

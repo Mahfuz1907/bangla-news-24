@@ -5,7 +5,9 @@ import NavLinks from './NavLinks';
 import AuthButtons from './AuthButtons';
 
 const getNavigation = async() => {
-        const response = await fetch('https://news-api-v2.vercel.app/api/categories')
+        const response = await fetch('https://news-api-v2.vercel.app/api/categories', {
+          cache: "no-store"
+        })
         const data = await response.json()
 
         return data.data

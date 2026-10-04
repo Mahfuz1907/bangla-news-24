@@ -20,7 +20,9 @@ export interface NewsTypes{
 }
 
 const getWorld = async() => {
-    const res = await fetch('https://news-api-v2.vercel.app/api/news/sections')
+    const res = await fetch('https://news-api-v2.vercel.app/api/news/sections', {
+        cache: "no-store"
+    })
     const data = await res.json()
     return data.data.find((item:Types) => item.title === 'বিশ্ব').articles
 }

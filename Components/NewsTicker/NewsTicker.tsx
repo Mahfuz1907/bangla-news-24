@@ -8,7 +8,9 @@ interface HeadlineTypes{
 }
 
 const getHeadLines = async() => {
-  const response = await fetch('https://news-api-v2.vercel.app/api/news/sections')
+  const response = await fetch('https://news-api-v2.vercel.app/api/news/sections', {
+    cache: "no-store"
+  })
   const data = await response.json()
   return data.data[0].articles
 }

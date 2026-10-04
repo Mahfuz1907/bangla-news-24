@@ -28,7 +28,9 @@ const toBanglaNumeral = (num: number): string => {
 
 
 const getMostRead = async() => {
-    const res = await fetch('https://news-api-v2.vercel.app/api/news/most-read')
+    const res = await fetch('https://news-api-v2.vercel.app/api/news/most-read', {
+        cache: "no-store"
+    })
     const data = await res.json()
     return data.data
 }
